@@ -1,6 +1,10 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
+public int maxTriple(int[] nums) {
+  int q = ((nums.length)/2);
+  int a = nums[0];
+  int b = nums[q];
+  int c = nums[nums.length-1];
+  int ab = Math.max(a,b);
+  int bc = Math.max(b,c);
+  int abbc = Math.max(ab,bc);
+  return abbc;
+}
